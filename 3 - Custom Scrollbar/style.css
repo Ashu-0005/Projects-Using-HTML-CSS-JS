@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: crimson;
+
+}
+
+.Main {
+    display: flex;
+    margin: 20px;
+   padding-left: 300px;
+   color: wheat;
+}
+
+.card {
+    width: 700px;
+    margin: 20px;
+    padding: 20px;
+    background-color: wheat;
+    line-height: 25px;
+    transition: 0.5S;
+
+}
+
+.card:hover {
+    background-color: rgb(243, 73, 73);
+}
+
+
+
+/* Scroll bar*/
+::-webkit-scrollbar {
+    background-color: brown;
+}
+
+::-webkit-scrollbar-thumb {
+    background: wheat;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(51, 38, 38);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 0, 0, 0.219);
+
+}
+
+::-webkit-scrollbar-button {
+    background-color: rgb(49, 40, 40);
+}
