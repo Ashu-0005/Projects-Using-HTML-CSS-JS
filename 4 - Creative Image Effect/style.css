@@ -1,0 +1,184 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      background: darkslategrey;
+      font-family: sans-serif;
+  }
+
+  .h1 {
+
+      color: #fff;
+      margin: 20px;
+
+
+  }
+
+
+  section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+
+  .hero {}
+
+
+  .hover-box {
+      position: relative;
+      width: 800px;
+      height: 500px;
+  }
+
+  .A {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transition: clip-path 0.5s ease;
+  }
+
+  .a {
+      background: url(./assets/jonas-degener-zdWnuuVdTtw-unsplash.jpg);
+      background-size: cover;
+      background-position: center;
+      clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
+  }
+
+  .b {
+      background: url(./assets/valentin-YGMuJeLFvXo-unsplash.jpg);
+      background-size: cover;
+      background-position: center;
+      clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+  }
+
+  .c {
+
+      background: url(./assets/jack-swords-IFH0EvwEeZ0-unsplash.jpg);
+      background-size: cover;
+      background-position: center;
+      clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+  }
+
+  /* Hover effect */
+  .hover-box:hover .A {
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+
+  .hover-box .A:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  h1,
+  h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+  }
+
+  .heroin {
+
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .Box {
+      position: relative;
+      height: 500px;
+      width: 500px;
+      border: 2px solid white;
+
+  }
+
+
+  .she {
+      height: 100%;
+      width: 100%;
+      background: url(./assets/linus-belanger-N_yJGWotRaE-unsplash.jpg);
+      background-size: cover;
+      animation: animate 4s infinite alternate;
+
+      background-position: center;
+      clip-path: inset(40px);
+  }
+
+
+
+  @keyframes animate {
+      0% {
+          clip-path: circle(100% at 50% 50%);
+
+      }
+
+      25% {
+          clip-path: circle(25% at 50% 50%);
+
+      }
+
+      50% {
+          clip-path: circle(25% at 20% 80%);
+
+      }
+
+      75% {
+          clip-path: circle(25% at 90% 50%);
+
+      }
+
+      100% {
+          clip-path: circle(25% at 10% 10%);
+
+      }
+  }
+
+  .Effect-Hover-Box{
+    
+    position: relative;
+      height: 500px;
+      width: 700px;
+      border: 2px solid white;
+  }
+  .O{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ animation: shrink 3s linear infinite;
+
+  }
+
+  .Image1{
+    background: url(./assets/pascal-debrunner-TOKeCFmRtj4-unsplash.jpg) center/cover no-repeat;
+    background-position: cover;
+    background-position: center;
+clip-path: circle(50% at 86% 50%);
+
+
+  }
+
+@keyframes shrink {
+    0%{
+clip-path: circle(50% at 86% 50%);
+    }
+    100%{
+        clip-path: circle(20% at 77% 49%);
+    }
+}
+
+.Image1:hover{
+    animation-play-state: paused;
+    transform: scale(1.1);
+    transition: tramsform 0.4s ease;
+
+
+}    
+    
