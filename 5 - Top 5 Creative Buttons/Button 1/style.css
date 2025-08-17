@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.contaniner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(16, 16,16);
+
+
+}
+.btn1{
+    text-decoration: none;
+    color: antiquewhite;
+    border: 2px solid antiquewhite;
+    padding: 2rem 5rem;
+    position: relative;
+overflow: hidden;
+transition: all 1s;
+}
+
+.btn1::before{
+    content: "Download";
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: antiquewhite;
+    transition: all 1s;
+    transform: translateY(-100%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.btn1:hover::before{
+   transform: translateY(0); 
+}
+
+
+
+
+
+.Image-Hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+     background: rgb(16, 16,16);
+
+
+}
+
+
+.div{
+    height: 400px;
+    width: 700px;
+ 
+    position: relative;
+    overflow: hidden;
+     border-radius: 20px;
+  border: 2px solid wheat;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+ 
+}
+
+
+.div::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./assets/valentin-YGMuJeLFvXo-unsplash.jpg");
+    background-size: cover;
+    transform: translatex(-100%);
+    transition: all 1s;
+
+}
+
+.div:hover::before{
+    transform: translatex(0);
+}
+
+
+
+.contaniner2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(16, 16,16);
+   
+}
+
+.btn2{
+    text-decoration: none;
+    padding: 1.5rem 5rem;
+   color: aqua;
+    border: 1.5px solid antiquewhite;
+    position: relative;
+    transition: all 1s;
+     overflow: hidden;
+     border-radius: 20px;
+}
+
+
+.btn2::before{
+    content: "Read More";
+    font-weight: normal;
+    color: #000;
+    background: wheat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+transform: translateY(-100%);
+transition: all  1s;
+}
+
+
+.btn2:hover::before{
+transform: translateY(0);
+}
