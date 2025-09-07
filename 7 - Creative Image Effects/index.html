@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 - Creative Image Effects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+
+        body {
+            background-color: black;
+
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+
+        }
+
+        a {
+            position: relative;
+
+
+            text-decoration: none;
+            padding: 20px 70px;
+
+            color: gray;
+
+        }
+
+        a:before {
+            content: "";
+            top: 0;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+
+            transition: 1s;
+            z-index: -1;
+        }
+
+        a:hover::before {
+            background:greenyellow;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
+        h1{
+            color:gray;
+            margin-right: 90px;
+        }
+         h1:hover{
+            color:  greenyellow;
+         }
+    </style>
+</head>
+
+<body>
+    <section>
+<h1>Creative Image Effects</h1>
+        <a target="_blank" href="./1. Effect/index.html">1st Effect</a>
+        <a target="_blank" href="./2. Effect/index.html">2nd Effect</a>
+        <a target="_blank" href="./3. Effect/index.html">3rd Effect</a>
+    </section>
+
+</body>
+
+</html>
