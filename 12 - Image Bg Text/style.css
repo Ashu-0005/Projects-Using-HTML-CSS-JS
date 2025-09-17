@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+.image-bg{
+font-size: 20rem;
+background: url(pexels-pixabay-247599.jpg);
+background-size: cover;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+}
